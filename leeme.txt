@@ -1,0 +1,1 @@
+Simplemente hice una rama principal y luego le cree mas ramas que son diferentes variantes del codigo, luego al final los fusione todos para finalizar el codigo.
