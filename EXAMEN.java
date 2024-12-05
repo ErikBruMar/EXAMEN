@@ -25,7 +25,7 @@ public class MenuProgram {
 
                     break;
                 case 3:
-
+		    contarLetra(scanner);
                     break;
                 case 4:
                     if (confirmarSalida(scanner)) {
@@ -61,7 +61,21 @@ public class MenuProgram {
 
 
 
+    private static void contarLetra(Scanner scanner) {
+        System.out.print("Ingrese una frase: ");
+        String frase = scanner.nextLine();
+        System.out.print("Ingrese una letra: ");
+        char letra = scanner.next().charAt(0);
 
+        int contador = 0;
+        for (char c : frase.toCharArray()) {
+            if (c == letra) {
+                contador++;
+            }
+        }
+
+        System.out.println("La letra '" + letra + "' aparece " + contador + " veces en la frase.");
+    }
 
 
 
