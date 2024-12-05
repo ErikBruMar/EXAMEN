@@ -19,7 +19,7 @@ public class MenuProgram {
 
             switch (opcion) {
                 case 1:
-
+		    concatenarPalabras(scanner);
                     break;
                 case 2:
 
@@ -43,15 +43,15 @@ public class MenuProgram {
         scanner.close();
     }
 
+    private static void concatenarPalabras(Scanner scanner) {
+	System.out.print("Ingrese la primera palabra: ");
+	String palabra1 = scanner.nextLine();
+	System.out.print("Ingrese la segunda palabra: ");
+	String palabra2 = scanner.nextLine();
 
-
-
-
-
-
-
-
-
+	String resultado = palabra1 + palabra2;
+	System.out.println("Resultado: " + resultado);
+    }
 
 
 
