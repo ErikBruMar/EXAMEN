@@ -22,7 +22,7 @@ public class MenuProgram {
 
                     break;
                 case 2:
-
+		    contarPalabras(scanner);
                     break;
                 case 3:
 
@@ -53,8 +53,13 @@ public class MenuProgram {
 
 
 
+    private static void contarPalabras(Scanner scanner) {
+        System.out.print("Ingrese una frase: ");
+        String frase = scanner.nextLine();
 
-
+        String[] palabras = frase.trim().split("\\s+");
+        System.out.println("Número de palabras en la frase: " + palabras.length);
+    }
 
 
 
